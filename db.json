@@ -1,16 +1,170 @@
 {
-  "posts":[
+  "menuItems": [
     {
-      "id" : 0,
-      "title": "First post!",
-      "content" : "My first content!"
-    }
-  ],
-  "comments" : [
+      "name": "Matcha Latte",
+      "description": "Smooth pure matcha",
+      "initialPrice": 6,
+      "ingrediants": "Matcha Powder, Water, Agave*, milk*",
+      "photoUrl": "",
+      "menutItemConfig": [
+        {
+          "componentType": "toggle",
+          "componentDetails": {
+            "on": "Hot",
+            "off": "Iced"
+          },
+          "label": "Temp"
+        },
+        {
+          "componentType": "slider",
+          "componentDetails": {
+            "options": ["No", "Half", "Full", "Hella"]
+          },
+          "label": "Sweetness"
+        },
+        {
+          "componentType": "radio",
+          "componentDetails": {
+            "options": ["Almond", "Oat", "Soy", "Whole"]
+          },
+          "label": "Milk type"
+        }
+      ]
+    },
     {
-      "id": 0,
-      "content": "Wow such content!",
-      "username": "zero_cool"
+      "name": "Strawberry Matcha Latte",
+      "description": "Smooth pure matcha",
+      "initialPrice": 7,
+      "ingrediants": "Matcha Powder, Strawberries, Water, Agave*, milk*",
+      "photoUrl": "",
+      "menutItemConfig": [
+        {
+          "componentType": "toggle",
+          "componentDetails": {
+            "on": "Hot",
+            "off": "Iced"
+          },
+          "label": "Temp"
+        },
+        {
+          "componentType": "slider",
+          "componentDetails": {
+            "options": ["No", "Half", "Full", "Hella"]
+          },
+          "label": "Sweetness"
+        },
+        {
+          "componentType": "radio",
+          "componentDetails": {
+            "options": ["Almond", "Oat", "Soy", "Whole"]
+          },
+          "label": "Milk type"
+        }
+      ]
+    },
+    {
+      "name": "Orange Matcha Latte",
+      "description": "Smooth pure matcha",
+      "initialPrice": 7,
+      "ingrediants": "Matcha Powder, Water, Orange extract, Agave*, milk*",
+      "photoUrl": "",
+      "menutItemConfig": [
+        {
+          "componentType": "toggle",
+          "componentDetails": {
+            "on": "Hot",
+            "off": "Iced"
+          },
+          "label": "Temp"
+        },
+        {
+          "componentType": "slider",
+          "componentDetails": {
+            "options": ["No", "Half", "Full", "Hella"]
+          },
+          "label": "Sweetness"
+        },
+        {
+          "componentType": "radio",
+          "componentDetails": {
+            "options": ["Almond", "Oat", "Soy", "Whole"]
+          },
+          "label": "Milk type"
+        }
+      ]
+    },
+    {
+      "name": "Vanilla Matcha Latte",
+      "description": "Smooth pure matcha",
+      "initialPrice": 6.5,
+      "ingrediants": "Matcha Powder, Vanilla Extract, Water, Agave*, milk*",
+      "photoUrl": "",
+      "menutItemConfig": [
+        {
+          "componentType": "toggle",
+          "componentDetails": {
+            "on": "Hot",
+            "off": "Iced"
+          },
+          "label": "Temp"
+        },
+        {
+          "componentType": "slider",
+          "componentDetails": {
+            "options": ["No", "Half", "Full", "Hella"]
+          },
+          "label": "Sweetness"
+        },
+        {
+          "componentType": "radio",
+          "componentDetails": {
+            "options": ["Almond", "Oat", "Soy", "Whole"]
+          },
+          "label": "Milk type"
+        }
+      ]
+    },
+    {
+      "name": "Crossaint",
+      "description": "Smooth pure matcha",
+      "initialPrice": 5,
+      "ingrediants": "Flour, Water, ?",
+      "photoUrl": "",
+      "menutItemConfig": []
+    },
+    {
+      "name": "Pie",
+      "description": "Smooth pure matcha",
+      "initialPrice": 7,
+      "ingrediants": "Flour, Water, ?",
+      "photoUrl": "",
+      "menutItemConfig": [
+        {
+          "componentType": "toggle",
+          "componentDetails": {
+            "on": "Yes",
+            "off": "No"
+          },
+          "label": "Whipcream"
+        }
+      ]
+    },
+    {
+      "name": "Cake",
+      "description": "Smooth pure matcha",
+      "initialPrice": 7,
+      "ingrediants": "Flour, Water, ?",
+      "photoUrl": "",
+      "menutItemConfig": [
+        {
+          "componentType": "toggle",
+          "componentDetails": {
+            "on": "Yes",
+            "off": "No"
+          },
+          "label": "Whipcream"
+        }
+      ]
     }
   ]
 }
