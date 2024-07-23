@@ -1,10 +1,11 @@
 {
   "name": "json-server-deploy",
   "version": "1.0.0",
-  "description": "Simple json database to deploy to the host of your choice",
+  "description": "Server for matcha shop. Json DB and stripe interactions",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server2.js",
+    "dev": "nodemon server2"
   },
   "keywords": [
     "json-server,heroku, node, REST API"
@@ -12,6 +13,8 @@
   "author": "Jesper Orb",
   "license": "ISC",
   "dependencies": {
-    "json-server": "^0.17.0"
+    "express": "^4.19.2",
+    "json-server": "^0.17.0",
+    "nodemon": "^3.1.4"
   }
 }
