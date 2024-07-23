@@ -5,21 +5,24 @@
       "description": "Smooth pure matcha",
       "initialPrice": 6,
       "ingrediants": "Matcha Powder, Water, Agave*, milk*",
-      "photoUrl": "",
-      "menutItemConfig": [
+      "photoUrl": "https://images.unsplash.com/photo-1566657040726-62fd1e379726?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "alt": "Matcha Latte Image",
+      "menutItemConfigs": [
         {
           "componentType": "toggle",
           "componentDetails": {
-            "on": "Hot",
-            "off": "Iced"
+            "on": "Iced",
+            "off": "Hot"
           },
+          "defaultValue": "Hot",
           "label": "Temp"
         },
         {
           "componentType": "slider",
           "componentDetails": {
-            "options": ["No", "Half", "Full", "Hella"]
+            "options": [0, 25, 50, 100]
           },
+          "defaultValue": 50,
           "label": "Sweetness"
         },
         {
@@ -27,6 +30,7 @@
           "componentDetails": {
             "options": ["Almond", "Oat", "Soy", "Whole"]
           },
+          "defaultValue": "Almond",
           "label": "Milk type"
         }
       ]
@@ -36,21 +40,24 @@
       "description": "Smooth pure matcha",
       "initialPrice": 7,
       "ingrediants": "Matcha Powder, Strawberries, Water, Agave*, milk*",
-      "photoUrl": "",
-      "menutItemConfig": [
+      "photoUrl": "https://images.unsplash.com/photo-1593443320739-77f74939d0da?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "alt": "Strawberry Matcha Latte Image",
+      "menutItemConfigs": [
         {
           "componentType": "toggle",
           "componentDetails": {
-            "on": "Hot",
-            "off": "Iced"
+            "on": "Iced",
+            "off": "Hot"
           },
+          "defaultValue": "Hot",
           "label": "Temp"
         },
         {
           "componentType": "slider",
           "componentDetails": {
-            "options": ["No", "Half", "Full", "Hella"]
+            "options": [0, 25, 50, 100]
           },
+          "defaultValue": 50,
           "label": "Sweetness"
         },
         {
@@ -58,6 +65,7 @@
           "componentDetails": {
             "options": ["Almond", "Oat", "Soy", "Whole"]
           },
+          "defaultValue": "Almond",
           "label": "Milk type"
         }
       ]
@@ -67,21 +75,24 @@
       "description": "Smooth pure matcha",
       "initialPrice": 7,
       "ingrediants": "Matcha Powder, Water, Orange extract, Agave*, milk*",
-      "photoUrl": "",
-      "menutItemConfig": [
+      "photoUrl": "https://images.unsplash.com/photo-1594671586855-eda12bfeb36f?q=80&w=3688&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "alt": "Orange Matcha Latte Image",
+      "menutItemConfigs": [
         {
           "componentType": "toggle",
           "componentDetails": {
-            "on": "Hot",
-            "off": "Iced"
+            "on": "Iced",
+            "off": "Hot"
           },
+          "defaultValue": "Hot",
           "label": "Temp"
         },
         {
           "componentType": "slider",
           "componentDetails": {
-            "options": ["No", "Half", "Full", "Hella"]
+            "options": [0, 25, 50, 100]
           },
+          "defaultValue": 50,
           "label": "Sweetness"
         },
         {
@@ -89,6 +100,7 @@
           "componentDetails": {
             "options": ["Almond", "Oat", "Soy", "Whole"]
           },
+          "defaultValue": "Almond",
           "label": "Milk type"
         }
       ]
@@ -98,21 +110,24 @@
       "description": "Smooth pure matcha",
       "initialPrice": 6.5,
       "ingrediants": "Matcha Powder, Vanilla Extract, Water, Agave*, milk*",
-      "photoUrl": "",
-      "menutItemConfig": [
+      "photoUrl": "https://images.unsplash.com/photo-1546531538-ce46c6fcf046?q=80&w=3264&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "alt": "Vanilla Matcha Latte Image",
+      "menutItemConfigs": [
         {
           "componentType": "toggle",
           "componentDetails": {
-            "on": "Hot",
-            "off": "Iced"
+            "on": "Iced",
+            "off": "Hot"
           },
+          "defaultValue": "Hot",
           "label": "Temp"
         },
         {
           "componentType": "slider",
           "componentDetails": {
-            "options": ["No", "Half", "Full", "Hella"]
+            "options": [0, 25, 50, 100]
           },
+          "defaultValue": 50,
           "label": "Sweetness"
         },
         {
@@ -120,6 +135,7 @@
           "componentDetails": {
             "options": ["Almond", "Oat", "Soy", "Whole"]
           },
+          "defaultValue": "Almond",
           "label": "Milk type"
         }
       ]
@@ -129,22 +145,25 @@
       "description": "Smooth pure matcha",
       "initialPrice": 5,
       "ingrediants": "Flour, Water, ?",
-      "photoUrl": "",
-      "menutItemConfig": []
+      "photoUrl": "https://images.unsplash.com/photo-1592234074644-80a18aa9ccbb?q=80&w=3677&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "alt": "Scone Image",
+      "menutItemConfigs": []
     },
     {
       "name": "Pie",
       "description": "Smooth pure matcha",
       "initialPrice": 7,
       "ingrediants": "Flour, Water, ?",
-      "photoUrl": "",
-      "menutItemConfig": [
+      "photoUrl": "https://images.unsplash.com/photo-1600493852011-3e1e6f03bc99?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "alt": "Pie Image",
+      "menutItemConfigs": [
         {
           "componentType": "toggle",
           "componentDetails": {
             "on": "Yes",
             "off": "No"
           },
+          "defaultValue": "Yes",
           "label": "Whipcream"
         }
       ]
@@ -154,17 +173,9 @@
       "description": "Smooth pure matcha",
       "initialPrice": 7,
       "ingrediants": "Flour, Water, ?",
-      "photoUrl": "",
-      "menutItemConfig": [
-        {
-          "componentType": "toggle",
-          "componentDetails": {
-            "on": "Yes",
-            "off": "No"
-          },
-          "label": "Whipcream"
-        }
-      ]
+      "photoUrl": "https://images.unsplash.com/photo-1517427294546-5aa121f68e8a?q=80&w=3264&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "alt": "Cake Image",
+      "menutItemConfigs": []
     }
   ]
 }
