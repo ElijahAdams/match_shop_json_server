@@ -43,6 +43,8 @@ router.render = async (req, res) => {
     const menuItemProductPromises = menuItems.map(async (menuItem) => {
       const product = await stripe.products.retrieve(menuItem.productId);
       menuItem.product = product;
+      const prices =  await stripe.prices.retrieve(product.default_price);
+      menuItem.prices = prices;
       return menuItem;
     });
     menuItemsWithProducts = await Promise.all(menuItemProductPromises);
