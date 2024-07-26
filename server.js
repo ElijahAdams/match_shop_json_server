@@ -40,10 +40,10 @@ router.render = async (req, res) => {
   let menuItemsWithProducts;
   if(req.method === 'GET' && req.path === '/menuItems') {
     const menuItems = res.locals.data;
-    const menuItemProductPromises = menuItems.map(async (menuitem) => {
-      const product = await stripe.products.retrieve('prod_QXB0KA6cORkUpl');
-      menuitem.product = product;
-      return menuitem;
+    const menuItemProductPromises = menuItems.map(async (menuItem) => {
+      const product = await stripe.products.retrieve(menuItem.productId);
+      menuItem.product = product;
+      return menuItem;
     });
     menuItemsWithProducts = await Promise.all(menuItemProductPromises);
     res.jsonp(menuItemsWithProducts);
