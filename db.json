@@ -2,11 +2,7 @@
   "menuItems": [
     { 
       "productId": "prod_QXj3l9j3LnhH74",
-      "name": "Matcha Latte",
-      "description": "Smooth pure matcha",
-      "initialPrice": 6,
       "ingrediants": "Matcha Powder, Water, Agave*, milk*",
-      "photoUrl": "https://images.unsplash.com/photo-1566657040726-62fd1e379726?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "alt": "Matcha Latte Image",
       "menutItemConfigs": [
         {
@@ -38,11 +34,7 @@
     },
     {
       "productId": "prod_QXjH9lPUZZ87Ll",
-      "name": "Strawberry Matcha Latte",
-      "description": "Smooth pure matcha",
-      "initialPrice": 7,
       "ingrediants": "Matcha Powder, Strawberries, Water, Agave*, milk*",
-      "photoUrl": "https://images.unsplash.com/photo-1593443320739-77f74939d0da?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "alt": "Strawberry Matcha Latte Image",
       "menutItemConfigs": [
         {
@@ -74,9 +66,6 @@
     },
     {
       "productId": "prod_QXjIxpyi1sn4Xf",
-      "name": "Orange Matcha Latte",
-      "description": "Smooth pure matcha",
-      "initialPrice": 7,
       "ingrediants": "Matcha Powder, Water, Orange extract, Agave*, milk*",
       "photoUrl": "https://images.unsplash.com/photo-1594671586855-eda12bfeb36f?q=80&w=3688&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "alt": "Orange Matcha Latte Image",
@@ -110,9 +99,6 @@
     },
     {
       "productId": "prod_QXjN3qJ7s2LCoY",
-      "name": "Vanilla Matcha Latte",
-      "description": "Smooth pure matcha",
-      "initialPrice": 6.5,
       "ingrediants": "Matcha Powder, Vanilla Extract, Water, Agave*, milk*",
       "photoUrl": "https://images.unsplash.com/photo-1546531538-ce46c6fcf046?q=80&w=3264&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "alt": "Vanilla Matcha Latte Image",
@@ -146,9 +132,6 @@
     },
     {
       "productId": "prod_QXjKdcPSbAwBvm",
-      "name": "Scone",
-      "description": "Smooth pure matcha",
-      "initialPrice": 5,
       "ingrediants": "Flour, Water, ?",
       "photoUrl": "https://images.unsplash.com/photo-1592234074644-80a18aa9ccbb?q=80&w=3677&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "alt": "Scone Image",
@@ -156,9 +139,6 @@
     },
     {
       "productId": "prod_QXjKBVozqDivy4",
-      "name": "Pie",
-      "description": "Smooth pure matcha",
-      "initialPrice": 7,
       "ingrediants": "Flour, Water, ?",
       "photoUrl": "https://images.unsplash.com/photo-1600493852011-3e1e6f03bc99?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "alt": "Pie Image",
@@ -176,9 +156,6 @@
     },
     {
       "productId": "prod_QXjN3GONKFw2Po",
-      "name": "Cake",
-      "description": "Smooth pure matcha",
-      "initialPrice": 7,
       "ingrediants": "Flour, Water, ?",
       "photoUrl": "https://images.unsplash.com/photo-1517427294546-5aa121f68e8a?q=80&w=3264&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "alt": "Cake Image",
