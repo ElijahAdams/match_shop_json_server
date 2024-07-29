@@ -17,6 +17,7 @@ server.use(jsonServer.bodyParser);
  * create a checkout session with stripe
  */
 server.post('/create-checkout-session', async (req, res, next) => {
+  console.log(req.body.lineItems);
   const session = await stripe.checkout.sessions.create({
     ui_mode: 'embedded',
     // TODO get line Items from req body. 
