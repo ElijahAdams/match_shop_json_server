@@ -11,6 +11,7 @@ const stripe = require('stripe')(process.env.STRIPE_SECRET);
 const YOUR_DOMAIN = 'http://localhost:4200';
 
 server.use(middlewares);
+server.use(jsonServer.bodyParser);
 
 /**
  * create a checkout session with stripe
@@ -19,13 +20,7 @@ server.post('/create-checkout-session', async (req, res, next) => {
   const session = await stripe.checkout.sessions.create({
     ui_mode: 'embedded',
     // TODO get line Items from req body. 
-    line_items: [
-      {
-        // Provide the exact Price ID (for example, pr_1234) of the product you want to sell
-        price: 'price_1Pgdv8FuVZY0XtEHSpckAc5z',
-        quantity: 1,
-      },
-    ],
+    line_items: req.body.lineItems,
     mode: 'payment',
     return_url: `${YOUR_DOMAIN}/return?session_id={CHECKOUT_SESSION_ID}`,
   });
