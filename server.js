@@ -28,6 +28,47 @@ server.post('/create-checkout-session', async (req, res, next) => {
   res.send({clientSecret: session.client_secret});
 });
 
+
+const calculateOrderAmount = async (items) => {
+  // const mockItems = [
+  //   {
+  //   id: "prod_QXjN3qJ7s2LCoY",
+  //   count: 2,
+  //   },
+  //   {
+  //     id: "prod_QXjKdcPSbAwBvm",
+  //     count: 2,
+  //   }
+  // ];
+  const itemsWithPricesPromise = items.map(async (item) => {
+    const product = await stripe.products.retrieve(item.id);
+    const price =  await stripe.prices.retrieve(product.default_price);
+    item.product = product;
+    item.price = price;
+    return item;
+  });
+  const itemsWithPrices = await Promise.all(itemsWithPricesPromise);
+  const totalPrice = itemsWithPrices.reduce(
+    (accumulator, currentItem) => accumulator + ((currentItem.price.unit_amount) * currentItem.count),
+    0,
+  );
+  return totalPrice;
+};
+
+server.post("/create-payment-intent", async (req, res) => {
+  const { items } = req.body;
+  const amount = await calculateOrderAmount(items);
+  // Create a PaymentIntent with the order amount and currency
+  const paymentIntent = await stripe.paymentIntents.create({
+    amount: amount,
+    currency: "usd",
+  });
+
+  res.send({
+    clientSecret: paymentIntent.client_secret,
+  });
+});
+
 /**
  * Intercept the menuItems GET call to merge it with the stripe data
  */
@@ -38,6 +79,7 @@ router.render = async (req, res) => {
     const menuItemProductPromises = menuItems.map(async (menuItem) => {
       const product = await stripe.products.retrieve(menuItem.productId);
       menuItem.product = product;
+      // TODO: This should be singular. Refactor to be "price"
       const prices =  await stripe.prices.retrieve(product.default_price);
       menuItem.prices = prices;
       return menuItem;
